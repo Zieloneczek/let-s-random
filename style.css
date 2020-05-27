@@ -1,0 +1,188 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  font-size: 20px;
+}
+
+label {
+  font-size: 36px;
+}
+
+input {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.information {
+  font-size: 18px;
+  color: rgb(172, 169, 169);
+}
+
+
+
+button {
+  margin: 0 30px;
+  padding: 10px 30px;
+  background: none;
+  border: 2px solid #00cfff;
+  border-radius: 5px;
+  color: #00cfff;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color .3s, box-shadow .3s;
+  box-shadow: 3px 3px 10px #00cfff;
+  float: left;
+  display: inline-block;
+}
+
+button:hover {
+  color: #00ffae;
+  box-shadow: 3px 3px 10px #00ffae;
+}
+
+.center {
+  float: left;
+}
+
+.center2 {
+  float: right;
+}
+.sekcja_info{
+  font-size: 18px;
+  color: #6699FF;
+}
+#elements{
+  font-size: 18px;
+  color: #CCFFFF;
+}
+#randomElement{
+  font-size: 18px;
+  color: #6699FF;
+}
+#wygrana{
+  font-size: 18px;
+  color: #CCFFFF;
+}
+.powitanie{
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size:35px;
+}
+#favDialog{
+  left:38%;
+  right:40%;
+  text-align: center;
+  align: center;
+  display: flexbox;
+}
+
+.closebutton {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  color: transparent;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+  left: 50%;
+  letter-spacing: 1.5px;
+  line-height: 90px;
+  outline: none;
+  overflow: hidden;
+  padding: 10px 0 0;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in;
+  width: 100px;
+}
+
+.closebutton::before,
+.closebutton::after {
+  background-color: white;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform-origin: center left;
+  transition: all 0.2s ease-in;
+  width: 141.4214px;
+  z-index: -1;
+}
+
+.closebutton::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.closebutton::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.closebutton:hover {
+  color: #8A2387;
+}
+
+.closebutton:hover::before,
+.closebutton:hover::after {
+  height: 50px;
+  transform: rotate(0deg);
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

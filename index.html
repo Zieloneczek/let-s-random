@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="powitanie">LET'S RANDOM</div>
+    <!-- <label for="title" class="powitanie">LET'S RANDOM</label> -->
+    <input type="value" id="element" placeholder="Wprowadź element!">
+    <br>
+    <div class="next">
+    <button style="float:left;" id="add">Dodaj!</button>
+    <button style="float:right;" id="random">Losuj!</button>
+</div>
+    <br>
+    <p class="information">Nie zacząłeś pisać...</p>
+    <p class="sekcja_info">
+    
+    <p id="elements"> </p>
+    <br>
+    <p id="randomElement"></p>
+    <p id="wygrana"> </p>
+    </p>
+    <br><br>
+    <dialog id="favDialog">
+        <form method="dialog">
+            <button value="cancel" class="close">X</button>
+            <div class="modal-dialog modal-xl modal-content col-lg-8 modal-content row justify-content-center modal-body text-center">
+
+           <label style="font-size:18px;">
+        
+
+            Wybierz swój element
+              <br>
+            <select id="elementsroulette">
+            </select>
+          </label>
+          <menu>
+
+            <button id="deleteEl" value="default">Usuń element</button>
+        </div>
+          </menu>
+        </form>
+      </dialog>
+
+      <menu>
+        <button id="updateDetails">Popraw dane</button>
+      </menu>
+      
+    
+<p class="randomFinal"></p> 
+<script src="script.js"></script>
+</body>
+</html>
